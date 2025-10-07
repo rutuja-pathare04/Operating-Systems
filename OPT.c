@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int findOptimal(int pages[], int frames[], int n, int index, int total) {
     int pos = -1, farthest = index, i, j;
     for (i = 0; i < n; i++) {
@@ -19,7 +18,6 @@ int findOptimal(int pages[], int frames[], int n, int index, int total) {
     }
     return (pos == -1) ? 0 : pos;
 }
-
 int main() {
     int pages[30], frames[10];
     int np, nf, faults = 0, i, j, k, flag, pos;
@@ -58,3 +56,4 @@ int main() {
     printf("\nTotal Page Faults = %d\n", faults);
     return 0;
 }
+
